@@ -1,0 +1,11 @@
+### Consultar produto existente
+GET http://localhost:8081/produtos/1
+
+### Produto inexistente
+GET http://localhost:8081/produtos/999
+
+### ID inválido
+GET http://localhost:8081/produtos/abc
+
+### Método incorreto
+POST http://localhost:8081/produtos/1
