@@ -3,7 +3,7 @@
 Projeto acadêmico com três serviços independentes: Produtos, Pedidos e Entregas.
 
 ## feito por:
-- Integrante: Victor Gabriel Borges Pereira
+Victor Gabriel Borges Pereira
 
 
 ## Execução
