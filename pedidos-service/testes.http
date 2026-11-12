@@ -1,0 +1,23 @@
+### Criar pedido com produto 1
+POST http://localhost:8082/pedidos
+Content-Type: text/plain
+
+1
+
+### Consultar pedido 1
+GET http://localhost:8082/pedidos/1
+
+### Produto inexistente
+POST http://localhost:8082/pedidos
+Content-Type: text/plain
+
+999
+
+### Corpo inválido
+POST http://localhost:8082/pedidos
+Content-Type: text/plain
+
+abc
+
+### Método incorreto
+GET http://localhost:8082/pedidos
