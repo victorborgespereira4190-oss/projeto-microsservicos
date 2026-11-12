@@ -1,0 +1,35 @@
+### Criar entrega do pedido 1 (crie o pedido antes)
+POST http://localhost:8083/entregas
+Content-Type: text/plain
+
+1
+
+### Consultar entrega 1
+GET http://localhost:8083/entregas/1
+
+### Pedido inexistente
+POST http://localhost:8083/entregas
+Content-Type: text/plain
+
+999999
+
+### Corpo inválido
+POST http://localhost:8083/entregas
+Content-Type: text/plain
+
+abc
+
+### Entrega inexistente
+GET http://localhost:8083/entregas/999999
+
+### ID inválido
+GET http://localhost:8083/entregas/abc
+
+### Método incorreto
+GET http://localhost:8083/entregas
+
+### Desligue Pedidos e repita o POST abaixo para obter 503
+POST http://localhost:8083/entregas
+Content-Type: text/plain
+
+1
